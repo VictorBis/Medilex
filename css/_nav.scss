@@ -1,0 +1,80 @@
+header {
+    position: relative;
+    background-color: $surface;
+  }
+  
+  .navbar {
+    padding: 1.125rem 1rem;
+    @include flex(center, center, row);
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+
+  
+  /* Tablet */
+  @media screen and (min-width: 760px) {
+    .navbar {
+      padding: 0rem 2rem;
+      @include flex(space-between, center, row);
+      &.bg-white {
+        background-color: $surface;
+      }
+    }
+
+    .right-nav{
+        display: flex;
+        & .nav-links{
+            margin-right: 2rem;
+        }
+    }
+
+    .nav-links {
+        @include flex(space-between, center, row);
+        .link {
+          margin: 0 1rem;
+          &:first-child {
+            margin-left: 0;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+  
+          & a:not(.top-btn){
+              color: $on-surface;
+          }
+        }
+      }
+  }
+  
+  /* Desktop */
+  @media screen and (min-width: 1200px) {
+    .navbar {
+      padding: 0rem 3.5rem;
+      @include flex(space-between, center, row);
+    }
+  
+    .nav-links {
+      @include flex(space-between, center, row);
+      .link {
+        margin: 0 1rem;
+        &:first-child {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+
+        & a & a:not(.top-btn){
+            color: $on-surface;
+        }
+      }
+    }
+  }

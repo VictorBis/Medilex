@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: $surface;
+    color: $on-surface;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+  a{
+    text-decoration: none;
+    color: $primary;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .max-width-1440{
+    max-width: 1440px;
+    margin: auto;
+  }

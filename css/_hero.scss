@@ -13,13 +13,14 @@
         & li{
             margin-bottom: 0.5rem;
             display: flex;
-            align-items: center;
+            align-items: top;
             &:last-child{
                 margin-bottom: 0rem;
             }
             & span{
                 display: inline-block;
                 margin-right: 6px;
+                margin-top: 4px;
                 border-left: 3px solid $primary;
                 height: 1rem;
                 width: 3px;
@@ -42,6 +43,26 @@
     .hero{
         margin: 2rem;
     }
+
+    .hero-img-container{
+        & img{
+            max-height: 300px;
+            object-fit: cover;
+        }
+    }
+
+    .content{
+        & .hero-phrases{
+            margin: 1.5rem 0 2rem 0;
+            & li{
+                align-items: center;
+                & span{
+                    margin-top: 0;
+                }
+            }
+        }
+}
+
   }
 
 /* Desktop */
@@ -58,5 +79,10 @@
 
     .hero-img-container{
         width: 50%;
+        & img{
+            max-height: 100%;
+            border-radius: 1rem;
+            object-fit: initial;
+        }
     }
 }

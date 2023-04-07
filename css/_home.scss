@@ -10,6 +10,10 @@
     }
 }
 
+.body-bold.blue{
+    margin-top: 1rem;
+}
+
 .cards-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -89,6 +93,7 @@
     align-items: center;
     width: 100%;
     color: $on-primary;
+    text-align: center;
 
     & h2{
         margin-bottom: 1.5rem;
@@ -109,6 +114,9 @@
 
     .last-cta-container{
         padding: 3.5rem 2rem;
+        & h2{
+            max-width: 20ch;
+        }
     }
 
     .cards-container{
@@ -157,6 +165,10 @@
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
+    .body-bold.blue{
+        margin-top: 0;
+    }
+
     .content-container{
         padding: 6rem 3.5rem;
         flex-direction: row;

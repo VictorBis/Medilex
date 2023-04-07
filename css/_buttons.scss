@@ -15,6 +15,9 @@
     color: $on-primary;
     border-radius: 0.5rem;
     width: fit-content;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
 
     &:hover{
         background-color: $hover;
@@ -41,14 +44,38 @@
     }
 }
 
+.title + a{
+    margin-bottom: 2rem;
+}
+
 .tertiary-button{
     padding: 1rem 2rem;
     background-color: $on-primary;
     color: $primary;
     border-radius: 0.5rem;
-    width: fit-content;
+    width: 100%;
+    text-align: center;
 
     &:hover{
         background-color: $surface-variant;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 760px) {
+    .button{
+        width: fit-content;
+        margin-bottom: 1.5rem;
+    }
+
+    .tertiary-button{
+        width: fit-content;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+    .title + a{
+        margin-bottom: 0;
     }
 }

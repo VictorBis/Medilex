@@ -5,7 +5,6 @@ header {
   
   .navbar {
     padding: 1.125rem 1rem;
-    @include flex(center, center, row);
   }
   
   .sticky {
@@ -14,10 +13,17 @@ header {
     z-index: 2;
   }
   
-  .nav-links {
-    display: none;
+  .right-nav{
+    & .nav-links, a{
+      display: none;
+    }
   }
 
+.whatsapp-sticky{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
   
   /* Tablet */
   @media screen and (min-width: 760px) {
@@ -33,6 +39,10 @@ header {
         display: flex;
         & .nav-links{
             margin-right: 2rem;
+        }
+
+        & .nav-links, a{
+          display: flex;
         }
     }
 
@@ -51,6 +61,12 @@ header {
               color: $on-surface;
           }
         }
+      }
+
+      .whatsapp-sticky{
+        position: fixed;
+        bottom: 1rem;
+        right: 2rem;
       }
   }
   
@@ -76,5 +92,10 @@ header {
             color: $on-surface;
         }
       }
+    }
+
+    .whatsapp-sticky{
+      position: fixed;
+      right: 3.5rem;
     }
   }

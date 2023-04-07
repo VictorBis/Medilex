@@ -3,6 +3,10 @@
     background-color: $primary;
     color: $on-primary;
     border-radius: 0 0 0.5rem 0.5rem;
+
+    &:hover{
+        background-color: $hover;
+    }
 }
 
 .button{
@@ -11,4 +15,40 @@
     color: $on-primary;
     border-radius: 0.5rem;
     width: fit-content;
+
+    &:hover{
+        background-color: $hover;
+    }
+}
+
+.secondary-btn{
+    display: flex;
+    align-items: end;
+    width: fit-content;
+    margin-top: 1rem;
+
+    & span{
+        margin-left: 0.25rem;
+        transition: all ease-in-out 0.3s;
+    }
+
+    &:hover{
+        color: $hover;
+        & span{
+            margin-left: 0.5rem;
+            color: $hover;
+        }
+    }
+}
+
+.tertiary-button{
+    padding: 1rem 2rem;
+    background-color: $on-primary;
+    color: $primary;
+    border-radius: 0.5rem;
+    width: fit-content;
+
+    &:hover{
+        background-color: $surface-variant;
+    }
 }

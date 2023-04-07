@@ -8,6 +8,7 @@ $on-surface-variant: #58585A;
 $surface-variant: #F7F7F8;
 $outline: #D9D9D9;
 $outline-varian: #939395;
+$hover: #0F2BC7;
 
 .blue{
     color: $primary;
@@ -15,4 +16,20 @@ $outline-varian: #939395;
 
 .gray{
     color: $on-surface-variant;
+}
+
+.surface-bg{
+    background-color: $surface;
+}
+
+.surface-variant-bg{
+    background-color: $surface-variant;
+}
+
+.primary-bg{
+    background-color: $primary;
+}
+
+.black{
+    color: $on-surface;
 }

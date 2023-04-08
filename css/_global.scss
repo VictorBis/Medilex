@@ -8,7 +8,6 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    position: relative;
     background-color: $surface;
     color: $on-surface;
   }
@@ -24,6 +23,10 @@
     font-size: 1rem;
     line-height: 1.5;
     width: fit-content;
+
+    &:hover{
+      color: $hover;
+    }
   }
 
   .max-width-1440{
@@ -39,6 +42,34 @@
   'opsz' 48
 }
 
+.footer{
+  margin-top: auto;
+}
+
+.max-width-992{
+  margin: 1rem 1rem 2rem 1rem;
+}
+
+.margin-bottom-24{
+  margin-bottom: 1.5rem;
+}
+
+/* Tablet */
+@media screen and (min-width: 760px) {
+  .max-width-992{
+    margin: 2rem 2rem 3rem 2rem;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 1200px) {
+  .max-width-992{
+    max-width: 996px;
+    margin: 2.5rem auto 5rem auto;
+  }
+}
+
+/* Desktop */
 @media screen and (min-width: 1600px) {
   .max-width-1600{
     max-width: 1600px;

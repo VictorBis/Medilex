@@ -17,6 +17,7 @@ header {
     & .nav-links, a{
       display: none;
     }
+
   }
 
 .whatsapp-sticky{
@@ -60,6 +61,10 @@ header {
           & a:not(.top-btn){
               color: $on-surface;
           }
+
+          & a.selected{
+            color: $primary;
+        }
         }
       }
 

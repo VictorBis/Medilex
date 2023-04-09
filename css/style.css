@@ -139,6 +139,18 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
+.margin-bottom-8 {
+  margin-bottom: 0.5rem;
+}
+
+.margin-bottom-16 {
+  margin-bottom: 1rem;
+}
+
+.max-width-992.margin-bottom-48 {
+  margin-bottom: 3rem;
+}
+
 /* Tablet */
 @media screen and (min-width: 760px) {
   .max-width-992 {
@@ -320,6 +332,7 @@ header {
 
 .top-btn:hover {
   background-color: #0c27bc;
+  color: #ffffff;
 }
 
 .button {
@@ -337,6 +350,7 @@ header {
 
 .button:hover {
   background-color: #0c27bc;
+  color: #ffffff;
 }
 
 .secondary-btn {
@@ -929,6 +943,64 @@ header {
   }
   .recomendations .recomended-articles-container .recomended-article .article-img-container {
     width: 300px;
+  }
+}
+
+.about-section {
+  margin-top: 2rem;
+}
+
+.about-section .about-image-container {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.about-section .about-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.about-section .about-list {
+  list-style: initial;
+}
+
+.about-section .about-list li {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0.25rem 0 0 1rem;
+}
+
+.cta-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/* Tablet */
+@media screen and (min-width: 760px) {
+  .about-section {
+    margin-top: 3rem;
+  }
+  .about-image-container {
+    margin-bottom: 2.5rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-image-container.medilex-img {
+    max-width: 400px;
+  }
+  .cta-container {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
   }
 }
 

@@ -1,0 +1,51 @@
+.about-section{
+    margin-top: 2rem;
+
+    & .about-image-container{
+        margin-bottom: 1.5rem;
+        text-align: center;
+        width: 100%;
+
+        & img{
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    }
+
+    & .about-list{
+        list-style: initial;
+        & li{
+            font-size: 1rem;
+            line-height: 1.5;
+            font-weight: 400;
+            margin: 0.25rem 0 0 1rem;
+        }
+    }
+}
+
+.cta-container{
+    display: flex;
+    flex-direction: row;
+}
+/* Tablet */
+@media screen and (min-width: 760px) {
+    .about-section{
+        margin-top: 3rem;
+    }
+
+    & .about-image-container{
+        margin-bottom: 2.5rem;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &.medilex-img{
+            max-width: 400px;
+        }
+    }
+
+    .cta-container{
+        justify-content: end;
+    }
+}

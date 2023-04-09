@@ -65,6 +65,18 @@
                             </ul>
                             <a href="Contacto/" class="top-btn">Solicita una valoración</a>
                         </div>
+                        <div class="mobile-nav-trigger" onclick="mobileMenu()">
+                            <span class="material-symbols-outlined" id="hamburguer-menu">
+                                menu
+                                </span>
+                        </div>
+                    </div>
+                    <div class="mobile-nav collapsed" id="mobile-menu">
+                        <ul class="nav-links">
+                            <li class="link"><a href="Blog/">Blog</a></li>
+                            <li class="link"><a href="Nosotros/">Nosotros</a></li>
+                        </ul>
+                        <a href="Contacto/" class="top-btn">Solicita una valoración</a>
                     </div>
                 </nav>
             </header>
@@ -227,7 +239,7 @@
         </section>
         <section>
             <div class="whatsapp-sticky">
-                <a href="whatsapp://send?phone=+5551023422&abid=+5551023422"><img src="img/icon/Whatsapp.svg" alt="WhatsApp icono"></a>
+                <a href="whatsapp://send?phone=+5551023422&abid=+5551023422"><img src="img/icon/Whatsapp.svg" alt="WhatsApp icono" title="¿Necesitas ayuda?"></a>
             </div>
         </section>
     </main>
@@ -266,5 +278,6 @@
             <p class="small-regular">© Todos los derechos reservados</p>
         </footer>
     </div>
+    <script type="text/javascript" src="js/mobile-menu.js"></script>
 </body>
 </html>

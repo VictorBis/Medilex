@@ -25,11 +25,81 @@ header {
   bottom: 1rem;
   right: 1rem;
 }
+
+.mobile-nav-trigger, .mobile-nav{
+  display: none;
+}
   
-  /* Tablet */
-  @media screen and (min-width: 760px) {
+  /* Mobile nav*/
+  @media screen and (max-width: 550px) {
     .navbar {
-      padding: 0rem 2rem;
+      padding: 1rem;
+      @include flex(space-between, center, row);
+      &.bg-white {
+        background-color: $surface;
+      }
+    }
+
+    .mobile-nav-trigger{
+      display: initial;
+      cursor: pointer;
+
+      & span{
+        font-size: 2.5rem;
+      }
+    }
+
+    .mobile-nav{
+      display: flex;
+      flex-direction: column;
+      padding: 0 1rem 1.5rem 1rem;
+      background-color: $primary;
+      animation: fadeIn 0.3s;
+      & li{
+        padding: 1.5rem 0;
+        border-bottom: 1px solid $outline;
+
+        & a{
+          color: $surface;
+        }
+      }
+
+      & .top-btn{
+        margin-top: 1.5rem;
+        border-radius: 0.5rem;
+        width: 100%;
+        text-align: center;
+        background-color: $surface;
+        color: $primary;
+        padding: 1rem 2rem;
+
+        &:hover{
+          background-color: $surface-variant;
+          color: $primary;
+        }
+      }
+
+      &.collapsed{
+        display: none;
+      }
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+         opacity: 0;
+    }
+
+    to {
+         opacity: 1;
+    }
+  }
+
+
+  /* Tablet */
+  @media screen and (min-width: 550px) {
+    .navbar {
+      padding: 0rem 1rem;
       @include flex(space-between, center, row);
       &.bg-white {
         background-color: $surface;
@@ -37,17 +107,16 @@ header {
     }
 
     .right-nav{
+      display: flex;
+      & .nav-links{
+          margin-right: 2rem;
+      }
+
+      & .nav-links, a{
         display: flex;
-        & .nav-links{
-            margin-right: 2rem;
-        }
+      }
 
-        & .nav-links, a{
-          display: flex;
-        }
-    }
-
-    .nav-links {
+      .nav-links {
         @include flex(space-between, center, row);
         .link {
           margin: 0 1rem;
@@ -67,12 +136,21 @@ header {
         }
         }
       }
+  }
+
+  }
+
+  @media screen and (min-width: 760px) {
+    .navbar {
+      padding: 0rem 2rem;
+    }
 
       .whatsapp-sticky{
         position: fixed;
         bottom: 1rem;
         right: 2rem;
       }
+
   }
   
   /* Desktop */

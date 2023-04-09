@@ -10,7 +10,7 @@
     }
 }
 
-.button{
+.button, button{
     padding: 1rem 2rem;
     background-color: $primary;
     color: $on-primary;
@@ -19,6 +19,8 @@
     text-align: center;
     width: 100%;
     margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-size: 1rem;
 
     &:hover{
         background-color: $hover;
@@ -63,9 +65,13 @@
     }
 }
 
+button{
+    border: none;
+}
+
 /* Tablet */
 @media screen and (min-width: 760px) {
-    .button{
+    .button,button{
         width: fit-content;
         margin-bottom: 1.5rem;
     }

@@ -353,6 +353,9 @@ header {
   .right-nav .nav-links .link a.selected {
     color: #0B1F8F;
   }
+  .right-nav .nav-links .link a:hover {
+    color: #0c27bc;
+  }
 }
 
 @media screen and (min-width: 760px) {

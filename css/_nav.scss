@@ -133,7 +133,11 @@ header {
 
           & a.selected{
             color: $primary;
-        }
+          }
+
+          & a:hover{
+            color: $hover;
+          }
         }
       }
   }
